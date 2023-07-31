@@ -29,17 +29,17 @@
         </div>
       </div>
       <div id="presentation_header">
-        <a href="#presentation_title">
+        <a href="#presentation_title" onclick="activeLinkPresentation()">
           <nav id="presentation_link"> Présentation </nav>
         </a>
       </div>
       <div id="creation_header">
-        <a href="#creation_title">
+        <a href="#creation_title" onclick="activeLinkCreation()">
           <nav id="creation_link"> Créations </nav>
         </a>
       </div>
       <div id="contact_header">
-        <a href="#contact_title">
+        <a href="#contact_title" onclick="activeLinkContact()">
           <nav id="contact_link"> Contact </nav>
         </a>
       </div>
@@ -100,27 +100,27 @@
       <form method="post" id="contact_form" action="contact.php">
         <div id="id">
           <div id="first-name">
-            <label for="first-name_box">Prénom :</label>
-            <input type="text" id="first-name_box" name="first-name" placeholder="Votre prénom" qrequired>
+            <label for="first-name_box" id="first-name_label">Prénom :</label>
+            <input type="text" id="first-name_box" name="first-name" placeholder="Votre prénom" required>
           </div>
           <div id="last-name">
-            <label for="last-name_box">Nom :</label>
+            <label for="last-name_box" id="last-name_label">Nom :</label>
             <input type="text" type="text" id="last-name_box" name="last-name" placeholder="Votre nom" required>
           </div>
         </div>
         <div id="email">
-          <label for="email_box">Adresse e-mail :</label>
+          <label for="email_box" id="email_label">Adresse e-mail :</label>
           <input type="email" id="email_box" name="email" placeholder="NomPrenom@gmail.com" required>
         </div>
         <div id="object">
-          <label for="object_box">Objet :</label>
+          <label for="object_box" id="object_label"> Objet :</label>
           <input type="text" id="object_box" name="object" placeholder="Le sujet de votre message" required>
         </div>
         <div id="comments_block">
           <label id="comments_label" for="comments">Commentaire : </label>
           <span id="comments-max">Max. 500 caractères</span>
-          <textarea id="comments" name="comments" placeholder="Votre message" rows="4" maxlength="500" aria-describedby="message-max"
-            required></textarea>
+          <textarea id="comments" name="comments" placeholder="Votre message" rows="4" maxlength="500"
+            aria-describedby="message-max" required></textarea>
           <p id="error-message"><strong> Tous les champs doivent être remplis</strong></p>
         </div>
         <div id="submit_block">

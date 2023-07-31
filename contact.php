@@ -15,23 +15,23 @@
 
     <body>
         <?php
-            if (isset($_POST['comments'])) {
-                $entete  = 'MIME-Version: 1.0' . "\r\n";
-                $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                $entete .= '' . "\r\n";
-                $entete .= 'Reply-to: ' . $_POST['email'];
+            // if (isset($_POST['comments'])) {
+            //     $entete  = 'MIME-Version: 1.0' . "\r\n";
+            //     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+            //     $entete .= '' . "\r\n";
+            //     $entete .= 'Reply-to: ' . $_POST['email'];
 
-                $message = '<h1>Message envoyé depuis la page Contact de monportfolio.fr</h1>
-                <p>
-                <b>Nom : </b>' . $_POST['last-name'] . '<br>
-                <b>Prénom : </b>' . $_POST['first-name'] . '<br>
-                <b>Email : </b>' . $_POST['email'] . '<br>
-                <b>Message : </b>' . htmlspecialchars($_POST['comments']) . '</p>';
+            //     $message = '<h1>Message envoyé depuis la page Contact de monportfolio.fr</h1>
+            //     <p>
+            //     <b>Nom : </b>' . $_POST['last-name'] . '<br>
+            //     <b>Prénom : </b>' . $_POST['first-name'] . '<br>
+            //     <b>Email : </b>' . $_POST['email'] . '<br>
+            //     <b>Message : </b>' . htmlspecialchars($_POST['comments']) . '</p>';
 
-                $retour = mail('emmatremlet20@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-                if($retour)
-                    echo '<p>Votre message a bien été envoyé.</p>';
-            }
+            //     $retour = mail('emmatremlet20@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+            //     if($retour)
+            //         echo '<p>Votre message a bien été envoyé.</p>';
+            // }
 
               /*Envoi du mail*/
               if (isset($_POST['comments'])) {

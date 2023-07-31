@@ -1,4 +1,5 @@
 //Récupération des différentes zones de texte
+let errorMessage = document.getElementById("error-message");
 let firstName = document.getElementById("first-name_box");
 let lastName = document.getElementById("last-name_box");
 let email = document.getElementById("email_box");
@@ -84,19 +85,23 @@ let prensentationLink = document.getElementById("presentation_link");
 let creationLink = document.getElementById("creation_link");
 let contactLink = document.getElementById("contact_link");
 
-function activeLink() {
+function activeLinkPresentation() {
     if (prensentationLink.classList.toggle("active")) {
         prensentationLink.style.textDecoration = "underline";
     }
     else {
         prensentationLink.style.textDecoration = "none";
     }
+}
+function activeLinkCreation (){
     if (creationLink.classList.toggle("active")) {
         creationLink.style.textDecoration = "underline";
     }
     else {
         creationLink.style.textDecoration = "none";
     }
+}
+function activeLinkContact(){
     if (contactLink.classList.toggle("active")) {
         contactLink.style.textDecoration = "underline";
     }
@@ -105,4 +110,4 @@ function activeLink() {
     }
 
 }
-HTMLnavElement.prototype.myfunc = activeLink();
+
