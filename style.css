@@ -17,6 +17,7 @@
     background-color: #9ac8eb;
     font-family: "Manrope", sans-serif;
     line-height: 1.5;
+    cursor: default;
     display: flex;
     flex-direction: column;
     flex-basis: auto;

@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Portfolio Emma Tremlet"
     content="Portfolio de développeuse web contenant les différents projets réalisés par Emma Tremlet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon.ico">
   <link rel="shortcut icon" type="'image/x.icon" href="./Images/favicon.ico">
 
   <title>Portfolio Emma TREMLET</title>
@@ -97,29 +97,30 @@
       </br>
       </br>
       <h2 id="contact_title">Contact</h2>
-      <form id="contact_form" action="emmatremlet20@gmail.com">
+      <form method="post" id="contact_form" action="contact.php">
         <div id="id">
           <div id="first-name">
-            <label id="first-name">Prénom :</label>
-            <input type="text" id="first-name_box">
+            <label for="first-name_box">Prénom :</label>
+            <input type="text" id="first-name_box" name="first-name" placeholder="Votre prénom" qrequired>
           </div>
           <div id="last-name">
-            <label id="last-name">Nom :</label>
-            <input type="text" id="last-name_box">
+            <label for="last-name_box">Nom :</label>
+            <input type="text" type="text" id="last-name_box" name="last-name" placeholder="Votre nom" required>
           </div>
         </div>
         <div id="email">
-          <label id="email">Adresse e-mail :</label>
-          <input id="email_box">
+          <label for="email_box">Adresse e-mail :</label>
+          <input type="email" id="email_box" name="email" placeholder="NomPrenom@gmail.com" required>
         </div>
         <div id="object">
-          <label id="object">Objet :</label>
-          <input id="object_box">
+          <label for="object_box">Objet :</label>
+          <input type="text" id="object_box" name="object" placeholder="Le sujet de votre message" required>
         </div>
         <div id="comments_block">
-          <label id="comments_label">Commentaire : </label>
+          <label id="comments_label" for="comments">Commentaire : </label>
           <span id="comments-max">Max. 500 caractères</span>
-          <textarea id="comments" rows="4" maxlength="500" aria-describedby="message-max"></textarea>
+          <textarea id="comments" name="comments" placeholder="Votre message" rows="4" maxlength="500" aria-describedby="message-max"
+            required></textarea>
           <p id="error-message"><strong> Tous les champs doivent être remplis</strong></p>
         </div>
         <div id="submit_block">

@@ -1,39 +1,31 @@
+//Récupération des différentes zones de texte
+let firstName = document.getElementById("first-name_box");
+let lastName = document.getElementById("last-name_box");
+let email = document.getElementById("email_box");
+let object = document.getElementById("object_box");
+let comment = document.getElementById("comments");
+
 //Fonction qui ajoute les commentaires des utilisateurs sur la page
 function error(event) {
     //Enlève le rechargement par défaut
     event.preventDefault();
 
-    //Récupération de la balise div du message d'erreur
-    let errorMessage = document.getElementById("error-message");
-    //Récupération de la zone de texte du prénom
-    let firstName = document.getElementById("first-name_box");
-    //Récupération de la zone de texte du nom
-    let lastName = document.getElementById("last-name_box");
-    //Récupération de la zone de texte de l'adresse mail
-    let email = document.getElementById("email_box");
-    //Récupération de la zone de texte de l'objet
-    let object = document.getElementById("object_box");
-    //Récupération de la zone de texte des commentaires
-    let commentaires = document.getElementById("comments");
-
-
     //Boucle qui teste si les zones de texte sont vides ou non, puis affiche ou non le message d'erreur
-    if (firstName.value == "" || lastName.value == "" || object.value == "" || commentaires.value == "" || email.value == "") {
+    if (firstName.value == "" || lastName.value == "" || object.value == "" || comment.value == "" || email.value == "") {
         errorMessage.style.display = "block";
     }
     else {
         errorMessage.style.display = "none";
     }
+    // Hide alert after 3 seconds
+    setTimeout(function () {
+        errorMessage.style.display = "none";
+    }, 3000);
 }
+
 
 //Fonction qui permet de supprimer les valeurs des zones de texte
 function submitValue() {
-    //Récupération des différentes zones de texte
-    let firstName = document.getElementById("first-name_box");
-    let lastName = document.getElementById("last-name_box");
-    let email = document.getElementById("email_box");
-    let object = document.getElementById("object_box");
-    let comment = document.getElementById("comments");
 
     //On modifie les valeurs des champs de texte pour les rendre vide
     firstName.value = "";
