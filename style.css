@@ -24,6 +24,17 @@
     justify-content: space-between;
 }
 
+#body-404 {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: #9ac8eb;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.5;
+    cursor: default;
+}
+
 header {
     background-color: #feeaa1;
     width: 980px;
@@ -32,6 +43,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.logo-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.logo {
+    width: 150px;
+    border: 3px #dbc2a4;
+    box-shadow: 0px 0px 10px #dbc2a4;
+}
+
+.not-found {
+    padding-top: 2%;
+    margin-left: 30%;
+    font-size: 60px;
 }
 
 #header {
@@ -365,6 +395,11 @@ footer img:hover {
     padding-right: 30px;
 }
 
+.footer-404 {
+    padding-bottom: 2%;
+    padding-top: 8%;
+}
+
 .modal-container-CV {
     position: fixed;
     top: 0;
@@ -402,7 +437,7 @@ footer img:hover {
 }
 
 .close-CV {
-    padding: 5px 5px;
+    padding: 4px 8px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -520,7 +555,7 @@ li {
 }
 
 .close-specifications {
-    padding: 5px 5px;
+    padding: 4px 8px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -621,7 +656,7 @@ li {
 }
 
 .close-comments-space {
-    padding: 5px 5px;
+    padding: 4px 8px;
     border: none;
     border-radius: 5px;
     font-size: 16px;

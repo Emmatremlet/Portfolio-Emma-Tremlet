@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>404 — Not Found</title>
 </head>
+
 <body>
-    <h1>404 — Not Found</h1>
+    <div id="body-404">
+        <header>
+            <div id="header">
+                <a href="index.html#body">
+                    <div id="logo">
+                        <img src="./Images/favicon.ico"
+                            alt="Image fond bleu avec les lettres E et T avec des contours jaunes" id="logo_img">
+                    </div>
+                </a>
+                <div id="name_job">
+                    <strong> Emma Tremlet </strong><br>
+                    <i>Développeuse Web</i>
+                </div>
+            </div>
+            <div id="presentation_header">
+                <a href="index.html#presentation_title" onclick="activeLinkPresentation()">
+                    <nav id="presentation_link"> Présentation </nav>
+                </a>
+            </div>
+            <div id="creation_header">
+                <a href="index.html#creation_title" onclick="activeLinkCreation()">
+                    <nav id="creation_link"> Créations </nav>
+                </a>
+            </div>
+            <div id="contact_header">
+                <a href="index.html#contact_title" onclick="activeLinkContact()">
+                    <nav id="contact_link"> Contact </nav>
+                </a>
+            </div>
+        </header>
+
+        <div class="logo-404">
+            <img src="./Images/favicon.ico" alt="Image fond bleu avec les lettres E et T avec des contours jaunes"
+                class="logo">
+        </div>
+
+        <h1 class="not-found">404 — Not Found</h1>
+
+
+        <footer class="footer-404">
+            <div id="networks">
+                <a href="https://www.linkedin.com/in/emma-tremlet/">
+                    <img src=./Images/linkedin.png alt="Profil Linkedin Emma TREMLET" id="linkedin"> <br>
+                    Linkedin
+                </a>
+                <a href="https://github.com/Emmatremlet">
+                    <img src=./Images/github.png alt="Profil GitHub Emma TREMLET" id="github"> <br>
+                    GitHub
+                </a>
+            </div>
+            <p id="maj">Mis à jour le 02/08/2023</p>
+        </footer>
+    </div>
 </body>
+
 </html>
