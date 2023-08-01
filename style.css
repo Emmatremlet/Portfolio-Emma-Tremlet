@@ -96,7 +96,7 @@ h2 {
     font-family: "Edu_Sa_Beginner", sans-serif;
 }
 
-h3 {
+button {
     font-family: "Edu_Sa_Beginner", sans-serif;
 }
 
@@ -158,16 +158,9 @@ h3 {
 
 .modal-btn {
     background-color: #9ac8eb;
+    font-size: 18px;
     border: none;
     cursor: pointer;
-}
-
-.modal-btn h3 {
-    font-size: 18px;
-}
-
-#CV {
-    order: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,22 +168,22 @@ h3 {
     flex-basis: auto;
 }
 
+#CV {
+    order: 1;
+}
+
 #CV_image {
     order: 1;
-
 }
 
 #Cv_title {
     order: 2;
+    padding-left: 30%;
 }
 
 
 #specifications {
     order: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: auto;
 }
 
 #specifications_image {
@@ -199,14 +192,11 @@ h3 {
 
 #specifications_title {
     order: 2;
+    padding-left: 20%;
 }
 
 #comments_space {
     order: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: auto;
 }
 
 #comments_space_image {
@@ -215,6 +205,7 @@ h3 {
 
 #comments_space_title {
     order: 2;
+    padding-left: 5%;
 }
 
 #creations img {
@@ -406,7 +397,7 @@ footer img:hover {
     position: absolute;
     top: 50%;
     left: 45%;
-    transform: translate(-50%, calc(-50%-50px));
+    transform: translate(-50%, calc(-50% - 50px));
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
@@ -524,7 +515,7 @@ li {
     position: absolute;
     top: 50%;
     left: 45%;
-    transform: translate(-50%, calc(-50%-50px));
+    transform: translate(-50%, calc(-50% - 50px));
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
@@ -625,7 +616,7 @@ li {
     position: absolute;
     top: 50%;
     left: 45%;
-    transform: translate(-50%, calc(-50%-50px));
+    transform: translate(-50%, calc(-50% - 50px));
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 

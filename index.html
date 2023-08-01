@@ -24,7 +24,7 @@
           </div>
         </a>
         <div id="name_job">
-          <strong> Emma Tremlet </strong></br>
+          <strong> Emma Tremlet </strong><br >
           <i>Développeuse Web</i>
         </div>
       </div>
@@ -55,47 +55,50 @@
             id="Photo_De_Profil"></a>
         <p id="presentation">
           Suite à ma formation en ligne,
-          </br>j'ai obtenu le dipôme de <strong>développeur web full-stack.</strong></br></br>
-          Grâce à mon école d'ingénieur en cognitique, </br>
+          <br >
+          j'ai obtenu le dipôme de <strong>développeur web full-stack.</strong>
+          <br >
+          <br >
+          Grâce à mon école d'ingénieur en cognitique,
+          <br >
           j'ai appris à rendre accessible, à tous
-          utilisateurs, les différentes interfaces.</br>
-          </br>
+          utilisateurs, les différentes interfaces.
+          <br >
+          <br >
           Voici les projets que j'aimerais vous présenter !
         </p>
       </div>
-      </hr>
-      </br>
-      </br>
-      </br>
-      </br>
+      <br >
+      <br >
+      <br >
+      <br >
       <h2 id="creation_title">Creations</h2>
       <div id="creations">
         <div id="CV">
           <button class="modal-btn modal-trigger-CV">
             <img src=./Images/CV.png alt="Photo d'un CV réalisé en site web" id="CV_image">
-            <h3 id="Cv_title">Curriculum Vitae</h3>
+            <strong id="Cv_title">Curriculum Vitae</strong>
           </button>
         </div>
         <div id="specifications">
           <button class="modal-btn modal-trigger-specifications">
             <img src=./Images/CahierDesCharges.png alt="Photo d'un extrait d'un cahier des charges d'un projet fictif"
               id="specifications_image">
-            <h3 id="specifications_title">Cahier des charges fictif</h3>
+            <strong id="specifications_title">Cahier des charges fictif</strong>
           </button>
         </div>
         <div id="comments_space">
           <button class="modal-btn modal-trigger-comments-space">
             <img src=./Images/EspaceDeComments.png alt="Photo d'un espace de commentaires dynamique"
               id="comments_space_image">
-            <h3 id="comments_space_title">Espace de commentaires dynamique</h3>
+            <strong id="comments_space_title">Espace de commentaires dynamique</strong>
           </button>
         </div>
       </div>
-      </hr>
-      </br>
-      </br>
-      </br>
-      </br>
+      <br >
+      <br >
+      <br >
+      <br >
       <h2 id="contact_title">Contact</h2>
       <form method="post" id="contact_form" action="contact.php">
         <div id="id">
@@ -105,7 +108,7 @@
           </div>
           <div id="last-name">
             <label for="last-name_box" id="last-name_label">Nom :</label>
-            <input type="text" type="text" id="last-name_box" name="last-name" placeholder="Votre nom" required>
+            <input type="text" id="last-name_box" name="last-name" placeholder="Votre nom" required>
           </div>
         </div>
         <div id="email">
@@ -120,7 +123,7 @@
           <label id="comments_label" for="comments">Commentaire : </label>
           <span id="comments-max">Max. 500 caractères</span>
           <textarea id="comments" name="comments" placeholder="Votre message" rows="4" maxlength="500"
-            aria-describedby="message-max" required></textarea>
+            required></textarea>
           <p id="error-message"><strong> Tous les champs doivent être remplis</strong></p>
         </div>
         <div id="submit_block">
@@ -130,10 +133,10 @@
         </div>
       </form>
     </div>
-    </br>
-    </br>
-    </br>
-    <div class="modal-container-CV">
+    <br >
+    <br >
+    <br >
+    <div class="modal-container-CV modal">
       <div class="overlay-CV modal-trigger-CV"></div>
       <div class="modal-CV">
         <button class="close-CV modal-trigger-CV">X</button>
@@ -141,29 +144,31 @@
         <div class="body-modal-CV">
           <div class="slider-container slider-CV">
             <div class="slider">
-              <img class="img-modal" src=./Images/CV.png>
-              <img class="img-modal" src=./Images/CV2.png>
-              <img class="img-modal" src=./Images/HTML_CV.png>
-              <img class="img-modal" src=./Images/CSS_CV.png>
-              <img class="img-modal" src=./Images/CV.png>
+              <img class="img-modal" src=./Images/CV.png alt="Photo d'un CV réalisé en site web">
+              <img class="img-modal" src=./Images/CV2.png alt="Photo d'un CV réalisé en site web">
+              <img class="img-modal" src=./Images/HTML_CV.png alt="Photo du code HTML d'un CV réalisé en site web">
+              <img class="img-modal" src=./Images/CSS_CV.png alt="Photo du code CSS d'un CV réalisé en site web">
+              <img class="img-modal" src=./Images/CV.png alt="Photo d'un CV réalisé en site web">
             </div>
           </div>
           <div class="details-modal-CV">
             <p class="creation-date date-CV"><i>Fait le 27/06/2023</i></p>
             <div class="technologies-used">
               <h4>Technologies utilisées :</h4>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>GitHub</li>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>GitHub</li>
+              </ul>
             </div>
-            </br>
+            <br >
             <a class="link CV-link" href="https://github.com/Emmatremlet/CV-Emma-TREMLET">Lien
               Github</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-container-specifications">
+    <div class="modal-container-specifications modal">
       <div class="overlay-specifications modal-trigger-specifications"></div>
       <div class="modal-specifications">
         <button class="close-specifications modal-trigger-specifications">X</button>
@@ -171,27 +176,34 @@
         <div class="body-modal-specifications">
           <div class="slider-container slider-specifications">
             <div class="slider">
-              <img class="img-modal" src=./Images/CahierDesCharges.png>
-              <img class="img-modal" src=./Images/CahierDesCharges2.png>
-              <img class="img-modal" src=./Images/CahierDesCharges3.png>
-              <img class="img-modal" src=./Images/CahierDesCharges4.png>
-              <img class="img-modal" src=./Images/CahierDesCharges.png>
+              <img class="img-modal" src=./Images/CahierDesCharges.png
+                alt="Photo d'un extrait d'un cahier des charges d'un projet fictif">
+              <img class="img-modal" src=./Images/CahierDesCharges2.png
+                alt="Photo d'un extrait d'un cahier des charges d'un projet fictif">
+              <img class="img-modal" src=./Images/CahierDesCharges3.png
+                alt="Photo d'un extrait d'un cahier des charges d'un projet fictif">
+              <img class="img-modal" src=./Images/CahierDesCharges4.png
+                alt="Photo d'un extrait d'un cahier des charges d'un projet fictif">
+              <img class="img-modal" src=./Images/CahierDesCharges.png
+                alt="Photo d'un extrait d'un cahier des charges d'un projet fictif">
             </div>
           </div>
           <div class="details-modal-specifications">
             <p class="creation-date date-specifications"> <i>Fait le 05/07/2023</i> </p>
             <div class="technologies-used">
               <h4>Technologies utilisées :</h4>
-              <li>Pages</li>
+              <ul>
+                <li>Pages</li>
+              </ul>
             </div>
-            </br>
-            <a class="link specifications-link" href="./Documents/Cahier des charges La Socketterie.pdf">Lien
+            <br >
+            <a class="link specifications-link" href="./Documents/Cahier_des_charges_La_Socketterie.pdf">Lien
               PDF</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal-container-comments-space">
+    <div class="modal-container-comments-space modal">
       <div class="overlay-comments-space modal-trigger-comments-space"></div>
       <div class="modal-comments-space">
         <button class="close-comments-space modal-trigger-comments-space">X</button>
@@ -199,23 +211,30 @@
         <div class="body-modal-comments-space">
           <div class="slider-container slider-comments-space">
             <div class="slider">
-              <img class="img-modal" src=./Images/EspaceDeComments.png>
-              <img class="img-modal" src=./Images/EspaceDeComments2.png>
-              <img class="img-modal" src=./Images/EspaceDeComments3.png>
-              <img class="img-modal" src=./Images/EspaceDeComments4.png>
-              <img class="img-modal" src=./Images/EspaceDeComments.png>
+              <img class="img-modal" src=./Images/EspaceDeComments.png
+                alt="Photo d'un espace de commentaires dynamique">
+              <img class="img-modal" src=./Images/EspaceDeComments2.png
+                alt="Photo d'un espace de commentaires dynamique">
+              <img class="img-modal" src=./Images/EspaceDeComments3.png
+                alt="Photo du code JS d'un espace de commentaires dynamique">
+              <img class="img-modal" src=./Images/EspaceDeComments4.png
+                alt="Photo du code JS d'un espace de commentaires dynamique">
+              <img class="img-modal" src=./Images/EspaceDeComments.png
+                alt="Photo d'un espace de commentaires dynamique">
             </div>
           </div>
           <div class="details-modal-comments-space">
             <p class="creation-date date-comments-space"> <i>Fait le 20/07/2023</i> </p>
             <div class="technologies-used">
               <h4>Technologies utilisées :</h4>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>GitHub</li>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>GitHub</li>
+              </ul>
             </div>
-            </br>
+            <br >
             <a class="link comments-space-link"
               href="https://github.com/Emmatremlet/DynamiserUnEspaceDeCommentaire">Lien Github</a>
           </div>
@@ -223,19 +242,19 @@
       </div>
     </div>
     <footer>
-      <section id="networks">
+      <div id="networks">
         <a href="https://www.linkedin.com/in/emma-tremlet/">
-          <img src=./Images/linkedin.png alt="Profil Linkedin Emma TREMLET" id="linkedin" /> </br>
+          <img src=./Images/linkedin.png alt="Profil Linkedin Emma TREMLET" id="linkedin" > <br >
           Linkedin
         </a>
         <a href="https://github.com/Emmatremlet">
-          <img src=./Images/github.png alt="Profil GitHub Emma TREMLET" id="github" /> </br>
+          <img src=./Images/github.png alt="Profil GitHub Emma TREMLET" id="github" > <br >
           GitHub
         </a>
-      </section>
+      </div>
       <p id="maj">Mis à jour le 25/07/2023</p>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </div>
 
 </body>

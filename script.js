@@ -93,7 +93,8 @@ function activeLinkPresentation() {
         prensentationLink.style.textDecoration = "none";
     }
 }
-function activeLinkCreation (){
+
+function activeLinkCreation() {
     if (creationLink.classList.toggle("active")) {
         creationLink.style.textDecoration = "underline";
     }
@@ -101,7 +102,8 @@ function activeLinkCreation (){
         creationLink.style.textDecoration = "none";
     }
 }
-function activeLinkContact(){
+
+function activeLinkContact() {
     if (contactLink.classList.toggle("active")) {
         contactLink.style.textDecoration = "underline";
     }
