@@ -28,3 +28,6 @@ npm run dev
 npm run build
 ```
 # Portfolio-Emma-Tremlet
+
+The portfolio allows you to highlight your skills whether it is after an employer or
+with a customer. It lists your projects and creations.
